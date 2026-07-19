@@ -1,0 +1,49 @@
+appId: "com.aera.os"
+productName: "AERA OS"
+directories:
+  output: "release"
+  buildResources: "resources"
+
+files:
+  - "dist/**/*"
+  - "dist-electron/**/*"
+  - "package.json"
+
+extraResources:
+  - from: "database/sqlite/aera-os.db"
+    to: "database"
+  - from: "resources/icons/aera-icon-square.png"
+    to: "icon.png"
+  - from: "resources/icons/tray-icon.png"
+    to: "tray-icon.png"
+  - from: "resources/icons/tray-iconTemplate.png"
+    to: "tray-iconTemplate.png"
+
+win:
+  target: 
+    - "nsis"
+    - "portable"
+  icon: "resources/icons/aera-icon.ico"
+  artifactName: "${productName}-Setup-${version}.${ext}"
+
+mac:
+  target: 
+    - "dmg"
+    - "zip"
+  icon: "resources/icons/aera-icon.icns"
+  category: "public.app-category.productivity"
+  hardenedRuntime: true
+  entitlements: "build/entitlements.mac.plist"
+
+linux:
+  target:
+    - "AppImage"
+    - "deb"
+  icon: "resources/icons/aera-icon-square.png"
+  category: "Utility"
+
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true

@@ -1,0 +1,274 @@
+<!--
+ ============================================================================
+ AERA OS
+ MADE By Manoj Dahal
+ Copyright (c) 2026 Manoj Dahal
+ ============================================================================
+-->
+
+# AERA-OS Project Structure
+
+```text
+AERA-OS/
+├── README.md
+├── LICENSE
+├── CHANGELOG.md
+├── CONTRIBUTING.md
+├── ROADMAP.md
+├── package.json
+├── package-lock.json
+├── tsconfig.json
+├── electron-builder.yml
+├── vite.config.ts
+├── .env
+├── .env.example
+├── .gitignore
+│
+├── apps/
+│   ├── desktop/
+│   ├── web/
+│   ├── mobile/
+│   ├── cli/
+│   └── server/
+│
+├── electron/
+│   ├── main/
+│   ├── preload/
+│   ├── ipc/
+│   ├── permissions/
+│   ├── updater/
+│   ├── tray/
+│   ├── notifications/
+│   ├── shortcuts/
+│   └── window-manager/
+│
+├── frontend/
+│   ├── public/
+│   ├── src/
+│   │   ├── app/
+│   │   ├── pages/
+│   │   ├── layouts/
+│   │   ├── components/
+│   │   ├── widgets/
+│   │   ├── voice/
+│   │   ├── workspace/
+│   │   ├── timeline/
+│   │   ├── knowledge-graph/
+│   │   ├── terminal/
+│   │   ├── settings/
+│   │   ├── plugins/
+│   │   ├── themes/
+│   │   ├── animations/
+│   │   ├── hooks/
+│   │   ├── services/
+│   │   ├── stores/
+│   │   ├── utils/
+│   │   ├── styles/
+│   │   ├── assets/
+│   │   └── types/
+│
+├── core/
+│   ├── orchestrator/
+│   ├── reasoning/
+│   ├── planner/
+│   ├── execution/
+│   ├── reflection/
+│   ├── verifier/
+│   ├── context/
+│   ├── routing/
+│   ├── scheduler/
+│   ├── workflow/
+│   ├── task-engine/
+│   ├── event-bus/
+│   └── state-machine/
+│
+├── agents/
+│   ├── head-agent/
+│   ├── planner-agent/
+│   ├── memory-agent/
+│   ├── voice-agent/
+│   ├── vision-agent/
+│   ├── desktop-agent/
+│   ├── automation-agent/
+│   ├── coding-agent/
+│   ├── creative-agent/
+│   ├── research-agent/
+│   ├── browser-agent/
+│   ├── file-agent/
+│   ├── communication-agent/
+│   ├── scheduling-agent/
+│   ├── knowledge-agent/
+│   ├── application-agent/
+│   ├── plugin-agent/
+│   ├── hacking-agent/
+│   ├── health-agent/
+│   └── analytics-agent/
+│
+├── skills/
+│   ├── coding/
+│   ├── design/
+│   ├── photoshop/
+│   ├── illustrator/
+│   ├── figma/
+│   ├── blender/
+│   ├── hacking/
+│   ├── unreal/
+│   ├── unity/
+│   ├── premiere/
+│   ├── after-effects/
+│   ├── davinci/
+│   ├── fl-studio/
+│   ├── ableton/
+│   ├── office/
+│   ├── browser/
+│   ├── terminal/
+│   ├── docker/
+│   ├── github/
+│   ├── vscode/
+│   ├── android-studio/
+│   ├── xcode/
+│   └── custom/
+│
+├── voice/
+│   ├── wakeword/
+│   ├── vad/
+│   ├── stt/
+│   ├── tts/
+│   ├── streaming/
+│   ├── multilingual/
+│   ├── emotions/
+│   ├── speaker/
+│   ├── pronunciation/
+│   ├── voices/
+│   └── audio/
+│
+├── vision/
+│   ├── screen/
+│   ├── camera/
+│   ├── ocr/
+│   ├── ui-detection/
+│   ├── object-detection/
+│   ├── image-analysis/
+│   ├── diagrams/
+│   └── multimodal/
+│
+├── memory/
+│   ├── identity/
+│   ├── preferences/
+│   ├── projects/
+│   ├── conversations/
+│   ├── goals/
+│   ├── relationships/
+│   ├── timeline/
+│   ├── semantic/
+│   ├── vector-db/
+│   ├── knowledge-graph/
+│   ├── embeddings/
+│   ├── summaries/
+│   └── backup/
+│
+├── knowledge/
+│   ├── rag/
+│   ├── search/
+│   ├── documents/
+│   ├── citations/
+│   ├── indexing/
+│   ├── parsers/
+│   ├── loaders/
+│   └── retrieval/
+│
+├── desktop/
+│   ├── applications/
+│   ├── windows/
+│   ├── browser/
+│   ├── files/
+│   ├── clipboard/
+│   ├── keyboard/
+│   ├── mouse/
+│   ├── display/
+│   ├── devices/
+│   ├── notifications/
+│   ├── power/
+│   └── automation/
+│
+├── plugins/
+│   ├── sdk/
+│   ├── marketplace/
+│   ├── runtime/
+│   ├── sandbox/
+│   ├── installer/
+│   ├── updater/
+│   └── registry/
+│
+├── models/
+│   ├── local/
+│   ├── cloud/
+│   ├── routing/
+│   ├── prompts/
+│   ├── templates/
+│   └── providers/
+│
+├── api/
+│   ├── groq/
+│   ├── anthropic/
+│   ├── gemini/
+│   ├── nvidia-nvm/
+│   ├── weather/
+│   ├── search/
+│   ├── maps/
+│   └── integrations/
+│
+├── database/
+│   ├── sqlite/
+│   ├── migrations/
+│   ├── schema/
+│   ├── seeds/
+│   └── backups/
+│
+├── config/
+│   ├── system/
+│   ├── agents/
+│   ├── prompts/
+│   ├── voice/
+│   ├── models/
+│   ├── themes/
+│   └── permissions/
+│
+├── docs/
+│   ├── architecture/
+│   ├── prompts/
+│   ├── api/
+│   ├── sdk/
+│   ├── workflows/
+│   ├── skills/
+│   ├── ui/
+│   └── deployment/
+│
+├── scripts/
+│   ├── build/
+│   ├── dev/
+│   ├── release/
+│   ├── install/
+│   └── testing/
+│
+├── tests/
+│   ├── unit/
+│   ├── integration/
+│   ├── e2e/
+│   ├── ui/
+│   ├── agents/
+│   └── performance/
+│
+├── logs/
+├── cache/
+├── temp/
+├── backups/
+└── resources/
+    ├── icons/
+    ├── sounds/
+    ├── voices/
+    ├── wallpapers/
+    ├── animations/
+    ├── lottie/
+    └── fonts/
+```
