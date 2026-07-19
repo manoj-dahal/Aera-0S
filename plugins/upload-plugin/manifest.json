@@ -1,0 +1,8 @@
+{
+  "id": "com.aera.fileuploader",
+  "name": "File Upload & Ingestion Agent",
+  "version": "1.0.0",
+  "description": "Allows the user to drag and drop or manually select files, instantly parsing them into the central Memory Vector DB.",
+  "permissions": ["os.notify", "memory.write", "agents.request"],
+  "entryPoint": "index.js"
+}

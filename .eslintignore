@@ -1,0 +1,8 @@
+node_modules/
+dist/
+dist-electron/
+dist-backend/
+temp/
+coverage/
+resources/
+tests/
